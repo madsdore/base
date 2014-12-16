@@ -1,0 +1,6 @@
+require nspr.inc
+
+EXTRA_OECONF += " \
+	--enable-64bit \
+"
+
