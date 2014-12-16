@@ -1,1 +1,5 @@
 require ${PN}.inc
+
+LIBRARY_VERSION = "2"
+
+

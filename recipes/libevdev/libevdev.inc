@@ -8,6 +8,12 @@ SRC_URI = "http://www.freedesktop.org/software/libevdev/libevdev-${PV}.tar.xz"
 
 inherit autotools c++
 
+#PROVIDES_${PN} += "libevdev"
+
+DEPENDS += "libc"
+DEPENDS_${PN} = "libc"
+RDEPENDS_${PN} = "libc"
+
 # PACKAGES =+ "${PN}-staticdev ${PN}-utils ${PN}-utils-dbg"
 # FILES_${PN} += "${libdir}/libtiffxx.so.*"
 # FILES_${PN}-dev += "${libdir}/libtiffxx.so ${libdir}/libtiffxx.la"
