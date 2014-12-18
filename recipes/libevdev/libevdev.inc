@@ -13,11 +13,3 @@ inherit autotools c++
 DEPENDS += "libc"
 DEPENDS_${PN} = "libc"
 RDEPENDS_${PN} = "libc"
-
-# PACKAGES =+ "${PN}-staticdev ${PN}-utils ${PN}-utils-dbg"
-# FILES_${PN} += "${libdir}/libtiffxx.so.*"
-# FILES_${PN}-dev += "${libdir}/libtiffxx.so ${libdir}/libtiffxx.la"
-# FILES_${PN}-staticdev = "${libdir}/libtiffxx.a"
-# FILES_${PN}-dbg += "${libdir}/.debug/libtiffxx.so*"
-# FILES_${PN}-utils = "${bindir}/*"
-# FILES_${PN}-utils-dbg += "${bindir}/.debug/"
